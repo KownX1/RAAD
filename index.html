@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAAD Consulting - Empowering Individuals with Disabilities</title>
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .founder-section {
+      background: url('https://raadconsulting.net/_assets/media/bc9130cbdec27d108a678dc6e195e411.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+    .founder-overlay { background: rgba(79, 70, 229, 0.85); }
+    .lang-toggle button.active {
+      background: #4f46e5; color: #fff;
+    }
+  </style>
+  
+  
+  
+  
+</head>
+<body class="font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <img class="h-12 w-auto" src="https://raadconsulting.net/_assets/media/3872a87b01dd340517c477e9a06bf9c2.png" alt="RAAD Consulting Logo">
+          <span class="ml-3 text-xl font-bold text-indigo-600" data-i18n="brand">RAAD Consulting</span>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#top" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-600 bg-indigo-100" data-i18n="nav_home">Home</a>
+          <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600" data-i18n="nav_services">Services</a>
+          <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600" data-i18n="nav_about">About</a>
+          <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600" data-i18n="nav_contact">Contact</a>
+
+          <!-- Language toggle -->
+          <div class="lang-toggle flex items-center gap-2 ml-4">
+            <button id="btn-en" class="px-2 py-1 rounded text-sm border border-indigo-200">EN</button>
+            <button id="btn-es" class="px-2 py-1 rounded text-sm border border-indigo-200">ES</button>
+          </div>
+        </div>
+
+        <div class="md:hidden">
+          <button class="text-gray-700 focus:outline-none">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-gradient text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="hero_title">
+            Reach, Achieve, and Development Consulting
+          </h1>
+          <p class="text-xl mb-8" data-i18n="hero_subtitle">
+            Empowering individuals of all ages living with disabilities through personalized support.
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <img src="https://raadconsulting.net/_assets/media/b6bb9682455f6abfe9b1a15c3230c9aa.jpg" alt="Happy clients" class="rounded-lg shadow-2xl max-w-md">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mission / About Section -->
+  <div id="about" class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900" data-i18n="about_title">Our Mission</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+      </div>
+      <div class="md:flex items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <img src="https://raadconsulting.net/_assets/media/08566c52e300faa4db945f2497475def.png" alt="Mission illustration" class="rounded-lg shadow-lg">
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <p class="text-lg text-gray-700 mb-6" data-i18n="about_p1">
+            At RAAD Consulting, we are dedicated to empowering individuals of all ages living with disabilities.
+            Through personalized support, we foster growth and promote self-sufficiency.
+          </p>
+          <p class="text-lg text-gray-700" data-i18n="about_p2">
+            We want to ensure our clients have access to all the important skills to thrive successfully.
+            We pride ourselves by offering a variety of services tailored to individual needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900" data-i18n="services_title">Our Services</h2>
+        <div class="w-24 h-1 bg-indigo-600 mx-auto mt-4"></div>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md transition duration-300">
+          <div class="mb-4">
+            <img src="https://raadconsulting.net/_assets/media/a62a75e3a99c1330cff32cd9bc68d8c6.jpg" alt="Application assistance" class="rounded-lg w-full h-48 object-cover">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="svc_1_t">Application Assistance</h3>
+          <p class="text-gray-700" data-i18n="svc_1_d">
+            Navigating the application process to access vital resources for individuals with disabilities.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md transition duration-300">
+          <div class="mb-4">
+            <img src="https://raadconsulting.net/_assets/media/84cf9c35289a9116b277c20d8c586c0b.jpg" alt="Community integration" class="rounded-lg w-full h-48 object-cover">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="svc_2_t">Community Integration</h3>
+          <p class="text-gray-700" data-i18n="svc_2_d">
+            Promoting full societal inclusion through community activities and social events.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md transition duration-300">
+          <div class="mb-4">
+            <img src="https://raadconsulting.net/_assets/media/d1bc548af75a3de42b730b0e5dfdbb7e.jpg" alt="Independent living skills" class="rounded-lg w-full h-48 object-cover">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="svc_3_t">Independent Living Skills</h3>
+          <p class="text-gray-700" data-i18n="svc_3_d">
+            Developing essential skills to achieve greater independence in daily life.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md transition duration-300">
+          <div class="mb-4">
+            <img src="https://raadconsulting.net/_assets/media/3509bd6c925c6aaf73c84bd4868690ea.jpg" alt="Health and fitness" class="rounded-lg w-full h-48 object-cover">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="svc_4_t">Health & Fitness</h3>
+          <p class="text-gray-700" data-i18n="svc_4_d">
+            Encouraging physical exercise with access to a fully equipped gym (no membership needed).
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md transition duration-300">
+          <div class="mb-4">
+            <img src="https://raadconsulting.net/_assets/media/5c735ac8f33b7fb56f9f22c73f2585a6.jpg" alt="Parent mentorship" class="rounded-lg w-full h-48 object-cover">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="svc_5_t">Parent Mentorship</h3>
+          <p class="text-gray-700" data-i18n="svc_5_d">
+            Supporting parents and families through compassionate, hands-on mentoring.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md transition duration-300">
+          <div class="mb-4">
+            <img src="https://raadconsulting.net/_assets/media/7484520ca5488097b88776b2b1d0774b.jpg" alt="Advocacy" class="rounded-lg w-full h-48 object-cover">
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2" data-i18n="svc_6_t">Advocacy & Support</h3>
+          <p class="text-gray-700" data-i18n="svc_6_d">
+            Guiding families in navigating complex state systems and accessing essential services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Promise / Contact Section -->
+  <div id="contact" class="bg-indigo-600 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold" data-i18n="promise_title">Our Promise</h2>
+        <div class="w-24 h-1 bg-white mx-auto mt-4"></div>
+      </div>
+      <div class="md:flex items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <p class="text-xl mb-6" data-i18n="promise_p1">
+            Our loving expert consultants are dedicated to providing services to the Community with Love,
+            Respect, Dignity, and Commitment.
+          </p>
+          <p class="text-lg" data-i18n="promise_p2">
+            We are here to support you every step of the way. Schedule your free consultation today and
+            let's enhance lives together!
+          </p>
+        </div>
+        <div class="md:w-1/2 md:pl-12 flex justify-center">
+          <div class="bg-white text-indigo-600 p-6 rounded-lg shadow-lg max-w-md w-full">
+            <h3 class="text-xl font-bold mb-4" data-i18n="contact_card_title">Contact RAAD Now</h3>
+            <p class="mb-4" data-i18n="contact_card_p">
+              Making an appointment to work with RAAD Consulting is easy.
+            </p>
+            <p class="mt-4">
+              <span data-i18n="contact_card_call">For more information or questions, call us at:</span><br>
+              <span class="font-bold">(323) 610-1050</span><br>
+              <span class="text-sm" data-i18n="contact_card_spanish">Se Habla Español</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Founder Section -->
+  <div class="founder-section py-16 text-white">
+    <div class="founder-overlay py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="md:flex items-center">
+          <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+            <img src="https://raadconsulting.net/_assets/media/9819d3cbc3186245a405c3d8f1553d15.png" alt="Founder Angélica María Orellana" class="rounded-full border-4 border-white shadow-lg h-64 w-64 object-cover">
+          </div>
+          <div class="md:w-2/3 md:pl-12">
+            <h2 class="text-3xl font-bold mb-6" data-i18n="founder_title">Meet Our Founder</h2>
+            <h3 class="text-2xl font-semibold mb-4" data-i18n="founder_name">Angélica María Orellana</h3>
+            <p class="mb-4" data-i18n="founder_p1">
+              With over 25 years of experience working with individuals facing medical conditions,
+              and as a devoted mother to a young man with special needs alongside two typical children,
+              Angélica is deeply passionate about assisting those in need.
+            </p>
+            <p class="mb-4" data-i18n="founder_p2">
+              Her personal journey as an advocate for her son's education inspired her to create RAAD
+              Consulting — a place designed with love and dedication to foster greater independence and
+              enhance accessibility to essential programs for families.
+            </p>
+            <p data-i18n="founder_p3">
+              Angélica's commitment extends beyond her own family, propelling her to serve others with
+              the same passion and respect she desires for her own child.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex justify-between">
+        <div class="mb-8 md:mb-0">
+          <div class="flex items-center">
+            <img class="h-10 w-auto" src="https://raadconsulting.net/_assets/media/3872a87b01dd340517c477e9a06bf9c2.png" alt="RAAD Consulting Logo">
+            <span class="ml-3 text-xl font-bold text-white">RAAD Consulting</span>
+          </div>
+          <p class="mt-4 max-w-xs" data-i18n="footer_tag">
+            Empowering individuals of all ages living with disabilities through personalized support.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="footer_quicklinks">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#top" class="hover:text-indigo-400" data-i18n="nav_home">Home</a></li>
+              <li><a href="#services" class="hover:text-indigo-400" data-i18n="nav_services">Services</a></li>
+              <li><a href="#about" class="hover:text-indigo-400" data-i18n="nav_about">About</a></li>
+              <li><a href="#contact" class="hover:text-indigo-400" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="footer_services">Services</h3>
+            <ul class="space-y-2">
+              <li><span data-i18n="svc_1_t">Application Assistance</span></li>
+              <li><span data-i18n="svc_2_t">Community Integration</span></li>
+              <li><span data-i18n="svc_3_t">Independent Living Skills</span></li>
+              <li><span data-i18n="svc_5_t">Parent Mentorship</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4" data-i18n="footer_contact">Contact</h3>
+            <ul class="space-y-2">
+              <li class="flex items-center"><i data-feather="phone" class="mr-2 w-4 h-4"></i> (323) 610-1050</li>
+              <li class="flex items-center"><i data-feather="mail" class="mr-2 w-4 h-4"></i> info@raadconsulting.net</li>
+              <li class="flex items-center"><i data-feather="map-pin" class="mr-2 w-4 h-4"></i> Los Angeles, CA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+        <p>&copy; 2025 RAAD Consulting. <span data-i18n="rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+
+    const translations = {
+      en: {
+        brand: "RAAD Consulting",
+        nav_home: "Home",
+        nav_services: "Services",
+        nav_about: "About",
+        nav_contact: "Contact",
+
+        hero_title: "Reach, Achieve, and Development Consulting",
+        hero_subtitle: "Empowering individuals of all ages living with disabilities through personalized support.",
+
+        about_title: "Our Mission",
+        about_p1: "At RAAD Consulting, we are dedicated to empowering individuals of all ages living with disabilities. Through personalized support, we foster growth and promote self-sufficiency.",
+        about_p2: "We want to ensure our clients have access to all the important skills to thrive successfully. We pride ourselves by offering a variety of services tailored to individual needs.",
+
+        services_title: "Our Services",
+        svc_1_t: "Application Assistance",
+        svc_1_d: "Navigating the application process to access vital resources for individuals with disabilities.",
+        svc_2_t: "Community Integration",
+        svc_2_d: "Promoting full societal inclusion through community activities and social events.",
+        svc_3_t: "Independent Living Skills",
+        svc_3_d: "Developing essential skills to achieve greater independence in daily life.",
+        svc_4_t: "Health & Fitness",
+        svc_4_d: "Encouraging physical exercise with access to a fully equipped gym (no membership needed).",
+        svc_5_t: "Parent Mentorship",
+        svc_5_d: "Supporting parents and families through compassionate, hands-on mentoring.",
+        svc_6_t: "Advocacy & Support",
+        svc_6_d: "Guiding families in navigating complex state systems and accessing essential services.",
+
+        promise_title: "Our Promise",
+        promise_p1: "Our loving expert consultants are dedicated to providing services to the Community with Love, Respect, Dignity, and Commitment.",
+        promise_p2: "We are here to support you every step of the way. Schedule your free consultation today and let's enhance lives together!",
+
+        contact_card_title: "Contact RAAD Now",
+        contact_card_p: "Making an appointment to work with RAAD Consulting is easy.",
+        contact_card_call: "For more information or questions, call us at:",
+        contact_card_spanish: "Se Habla Español",
+
+        founder_title: "Meet Our Founder",
+        founder_name: "Angélica María Orellana",
+        founder_p1: "With over 25 years of experience working with individuals facing medical conditions, and as a devoted mother to a young man with special needs alongside two typical children, Angélica is deeply passionate about assisting those in need.",
+        founder_p2: "Her personal journey as an advocate for her son's education inspired her to create RAAD Consulting — a place designed with love and dedication to foster greater independence and enhance accessibility to essential programs for families.",
+        founder_p3: "Angélica's commitment extends beyond her own family, propelling her to serve others with the same passion and respect she desires for her own child.",
+
+        footer_tag: "Empowering individuals of all ages living with disabilities through personalized support.",
+        footer_quicklinks: "Quick Links",
+        footer_services: "Services",
+        footer_contact: "Contact",
+        rights: "All rights reserved."
+      },
+      es: {
+        brand: "RAAD Consulting",
+        nav_home: "Inicio",
+        nav_services: "Servicios",
+        nav_about: "Nosotros",
+        nav_contact: "Contacto",
+
+        hero_title: "Alcance, Logro y Consultoría para el Desarrollo",
+        hero_subtitle: "Empoderamos a personas de todas las edades con discapacidades mediante apoyo personalizado.",
+
+        about_title: "Nuestra Misión",
+        about_p1: "En RAAD Consulting estamos dedicados a empoderar a personas de todas las edades con discapacidades. A través de apoyo personalizado, impulsamos su crecimiento y promovemos la autosuficiencia.",
+        about_p2: "Queremos asegurar que nuestros clientes tengan acceso a las habilidades esenciales para prosperar. Nos enorgullece ofrecer diversos servicios adaptados a las necesidades de cada persona.",
+
+        services_title: "Nuestros Servicios",
+        svc_1_t: "Asistencia con Solicitudes",
+        svc_1_d: "Acompañamiento en el proceso de solicitudes para acceder a recursos vitales para personas con discapacidades.",
+        svc_2_t: "Integración Comunitaria",
+        svc_2_d: "Fomentamos la inclusión social mediante actividades comunitarias y eventos sociales.",
+        svc_3_t: "Habilidades para la Vida Independiente",
+        svc_3_d: "Desarrollo de habilidades esenciales para alcanzar mayor independencia en la vida diaria.",
+        svc_4_t: "Salud y Acondicionamiento",
+        svc_4_d: "Promovemos el ejercicio con acceso a un gimnasio completamente equipado (sin membresía).",
+        svc_5_t: "Mentoría para Padres",
+        svc_5_d: "Apoyo cercano y compasivo a padres y familias mediante mentoría práctica.",
+        svc_6_t: "Incidencia y Apoyo",
+        svc_6_d: "Orientamos a las familias para navegar sistemas estatales complejos y acceder a servicios esenciales.",
+
+        promise_title: "Nuestro Compromiso",
+        promise_p1: "Nuestros consultores expertos brindan servicios a la comunidad con Amor, Respeto, Dignidad y Compromiso.",
+        promise_p2: "Estamos para apoyarte en cada paso. ¡Agenda hoy tu consulta gratuita y mejoremos vidas juntos!",
+
+        contact_card_title: "Contacta a RAAD Hoy",
+        contact_card_p: "Agendar una cita con RAAD Consulting es sencillo.",
+        contact_card_call: "Para más información o preguntas, llámanos al:",
+        contact_card_spanish: "Se Habla Español",
+
+        founder_title: "Conoce a Nuestra Fundadora",
+        founder_name: "Angélica María Orellana",
+        founder_p1: "Con más de 25 años de experiencia con personas con condiciones médicas, y como madre de un joven con necesidades especiales además de dos hijos típicos, Angélica está profundamente comprometida con ayudar a quien lo necesite.",
+        founder_p2: "Su experiencia como defensora de la educación de su hijo la inspiró a crear RAAD Consulting — un lugar construido con amor y dedicación para fomentar mayor independencia y mejorar el acceso a programas esenciales para las familias.",
+        founder_p3: "El compromiso de Angélica va más allá de su familia, impulsándola a servir a otros con la misma pasión y respeto que desea para su propio hijo.",
+
+        footer_tag: "Empoderamos a personas de todas las edades con discapacidades mediante apoyo personalizado.",
+        footer_quicklinks: "Enlaces",
+        footer_services: "Servicios",
+        footer_contact: "Contacto",
+        rights: "Todos los derechos reservados."
+      }
+    };
+
+    let currentLang = 'en';
+    const htmlTag = document.documentElement;
+    const els = document.querySelectorAll("[data-i18n]");
+
+    function applyLang(lang) {
+      currentLang = lang;
+      htmlTag.setAttribute('lang', lang);
+      els.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const txt = translations[lang][key];
+        if (txt !== undefined) el.textContent = txt;
+      });
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      feather.replace(); // por si se re-renderizan íconos
+    }
+
+    document.getElementById('btn-en').addEventListener('click', () => applyLang('en'));
+    document.getElementById('btn-es').addEventListener('click', () => applyLang('es'));
+
+    // Inicializa idioma por defecto
+    applyLang('en');
+  </script>
+</body>
+</html>
